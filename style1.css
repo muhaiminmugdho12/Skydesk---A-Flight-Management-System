@@ -1,0 +1,389 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f7f9fc;
+    color: #111827;
+}
+
+/* Top Navbar */
+.top-bar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 14px 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.brand-logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.top-nav a {
+    margin-right: 18px;
+    text-decoration: none;
+    color: #4b5563;
+    font-size: 14px;
+}
+
+.top-nav a:hover {
+    color: #111827;
+}
+
+.top-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+
+
+.back-btn {
+    background-color: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 11px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* Main Content */
+.page-wrap {
+    max-width: 680px;
+    margin: 40px auto;
+    padding: 0 16px;
+}
+
+.payment-wrap {
+    max-width: 920px;
+    margin: 40px auto;
+    padding: 0 16px;
+}
+
+.main-heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+/* Cards */
+.details-card,
+.payment-card,
+.summary-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 26px;
+}
+
+.passenger-label,
+.section-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 18px;
+    color: #111827;
+}
+
+.two-col {
+    display: flex;
+    gap: 16px;
+}
+
+.two-col .field-box {
+    flex: 1;
+}
+
+.field-box {
+    margin-bottom: 16px;
+}
+
+.field-box label {
+    display: block;
+    font-size: 13px;
+    color: #374151;
+    margin-bottom: 6px;
+}
+
+.field-box input[type="text"],
+.field-box input[type="date"],
+.field-box select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #111827;
+}
+
+.field-box input:focus,
+.field-box select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.error-text {
+    color: #dc2626;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    min-height: 18px;
+}
+
+.continue-btn {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 11px 22px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.continue-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Payment Two-Column Layout & Trip Summary */
+.payment-grid {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.payment-card {
+    flex: 1.6;
+}
+
+.summary-card {
+    flex: 1;
+}
+
+.route-label {
+    font-size: 15px;
+    font-weight: bold;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.trip-meta {
+    font-size: 13px;
+    color: #6b7280;
+    margin-bottom: 6px;
+}
+
+.summary-divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 16px 0;
+}
+
+.fare-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #4b5563;
+    margin-bottom: 10px;
+}
+
+.fare-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+    color: #111827;
+    margin-top: 12px;
+}
+
+/* Confirmation Page */
+.confirm-wrap {
+    max-width: 620px;
+    margin: 60px auto;
+    padding: 0 16px;
+}
+
+.confirm-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 44px 30px;
+    text-align: center;
+}
+
+.check-circle {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    margin: 0 auto 22px;
+    border-radius: 50%;
+    background-color: #dcfce7;
+    color: #16a34a;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.confirm-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.confirm-text {
+    font-size: 14px;
+    color: #4b5563;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.confirm-subtext {
+    font-size: 13px;
+    color: #6b7280;
+    margin-bottom: 28px;
+}
+
+.confirm-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.btn-primary-link {
+    background-color: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn-primary-link:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-outline-link {
+    background-color: #ffffff;
+    color: #111827;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn-outline-link:hover {
+    background-color: #f3f4f6;
+}
+
+/* My Bookings Page */
+.bookings-wrap {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 0 16px;
+}
+
+.booking-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.booking-info {
+    min-width: 180px;
+}
+
+.pnr-text {
+    font-size: 12px;
+    color: #6b7280;
+    margin-bottom: 4px;
+}
+
+.route-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #111827;
+    margin-bottom: 4px;
+}
+
+.flight-sub {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.badge-confirmed {
+    background-color: #dcfce7;
+    color: #15803d;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 14px;
+}
+
+.badge-cancelled {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 14px;
+}
+
+.booking-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn-card-primary {
+    background-color: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.btn-card-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-card-outline {
+    background-color: #ffffff;
+    color: #111827;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.btn-card-outline:hover {
+    background-color: #f3f4f6;
+}

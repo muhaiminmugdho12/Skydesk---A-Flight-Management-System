@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyDesk - Passenger details</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="top-left">
+            <a href="flights.html" class="brand-logo">SkyDesk</a>
+            <div class="top-nav">
+                
+                <a href="bookings.html">My bookings</a>
+            </div>
+        </div>
+
+        <div class="top-right">
+        
+            <a href="flights.html" class="back-btn">Back</a>
+        </div>
+    </div>
+
+    <div class="page-wrap">
+        <h1 class="main-heading">Passenger details</h1>
+
+        <div class="details-card">
+            <h2 class="passenger-label">Passenger </h2>
+
+            <form id="passengerForm" action="payment.html" method="get" onsubmit="return validatePassengerForm()">
+                <div class="two-col">
+                    <div class="field-box">
+                        <label for="firstName">First name</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+
+                    <div class="field-box">
+                        <label for="lastName">Last name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+
+                <div class="two-col">
+                    <div class="field-box">
+                        <label for="dob">Date of birth</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+
+                    <div class="field-box">
+                        <label for="nidOrPassport">NID or passport no.</label>
+                        <input type="text" id="nidOrPassport" name="nidOrPassport" required>
+                    </div>
+                </div>
+
+                <div class="two-col">
+                    <div class="field-box">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+
+                    <div class="field-box">
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" name="phone" required>
+                    </div>
+                </div>
+
+                <div class="field-box">
+                    <label for="extraBaggage">Extra baggage</label>
+                    <select id="extraBaggage" name="extraBaggage" required>
+                        <option value="None">None</option>
+                        <option value="10 kg">10 kg</option>
+                        <option value="15 kg">15 kg</option>
+                        <option value="20 kg">20 kg</option>
+                    </select>
+                </div>
+
+                <p id="passengerError" class="error-text"></p>
+
+                <button type="submit" class="continue-btn">Continue to payment</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+
+</html>

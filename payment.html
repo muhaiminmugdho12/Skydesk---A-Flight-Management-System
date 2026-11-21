@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyDesk - Payment</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="top-left">
+            <a href="flights.html" class="brand-logo">SkyDesk</a>
+            <div class="top-nav">
+               
+                <a href="bookings.html">My bookings</a>
+            </div>
+        </div>
+
+        <div class="top-right">
+           
+            <a href="passenger.html" class="back-btn">Back</a>
+        </div>
+    </div>
+
+    <div class="payment-wrap">
+        <h1 class="main-heading">Payment</h1>
+
+        <div class="payment-grid">
+            <!-- Left: Payment Method Form -->
+            <div class="payment-card">
+                <h2 class="section-title">Payment method</h2>
+
+                <form id="paymentForm" action="confirmation.html" method="get" onsubmit="return validatePaymentForm()">
+                    <div class="field-box">
+                        <label for="paymentMethod">Method</label>
+                        <select id="paymentMethod" name="paymentMethod" required>
+                            <option value="V">VISA CARD</option>
+                            <option value="M">MASTER CARD</option>
+                            <option value="AE">AMERICAN EXPRESS</option>
+                        </select>
+                    </div>
+
+                    <div class="field-box">
+                        <label for="cardNumber">Card number</label>
+                        <input type="text" id="cardNumber" name="cardNumber" required>
+                    </div>
+
+                    <div class="two-col">
+                        <div class="field-box">
+                            <label for="expiryDate">Expiry</label>
+                            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+                        </div>
+
+                        <div class="field-box">
+                            <label for="cvvCode">CVV</label>
+                            <input type="text" id="cvvCode" name="cvvCode" required>
+                        </div>
+                    </div>
+
+                    <div class="field-box">
+                        <label for="cardName">Name on card</label>
+                        <input type="text" id="cardName" name="cardName" required>
+                    </div>
+
+                    <p id="paymentError" class="error-text"></p>
+
+                    <button type="submit" class="continue-btn">Pay</button>
+                </form>
+            </div>
+
+            <!-- Right: Trip Summary -->
+            <div class="summary-card">
+                <h2 class="section-title">Trip summary</h2>
+
+                <p class="route-label">Dhaka → Cox's Bazar</p>
+                <p class="trip-meta">Fri, 6 Nov · 08:15 – 09:20 · Non-stop</p>
+                <p class="trip-meta">1 Adult · Economy · 20 kg baggage</p>
+
+                <hr class="summary-divider">
+
+                <div class="fare-row">
+                    <span>Base fare</span>
+                    <span>BDT 5,200</span>
+                </div>
+
+                <div class="fare-row">
+                    <span>Taxes and fees</span>
+                    <span>BDT 750</span>
+                </div>
+
+                <div class="fare-total">
+                    <span>Total</span>
+                    <span>BDT 5,950</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+
+</html>
