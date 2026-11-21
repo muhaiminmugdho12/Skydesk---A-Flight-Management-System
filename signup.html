@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyDesk - Create your account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div style="display: flex; align-items: center; gap: 24px;">
+            <a href="login.html class="brand">SkyDesk</a>
+            <nav class="nav-links">
+                
+                
+            </nav>
+        </div>
+
+        <div class="nav-actions">
+            
+            <a href="login.html" class="btn-nav-all">Log in</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 class="page-title">Create your account</h1>
+        <p class="page-subtitle">Book faster and keep all your tickets in one place.</p>
+
+        <div class="form-card">
+         
+            <form id="signupForm"  action="login.html" method="get" onsubmit="return validateSignup()">
+                <div class="form-group">
+                    <label for="fullName">Full name</label>
+                    <input type="text" id="fullName" name="fullName">
+                </div>
+
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="text" id="signupEmail" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" name="password">
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword">
+                </div>
+
+                <label class="checkbox-label">
+                    <input type="checkbox" id="terms">
+                    <span>I agree to the <a href="#">Terms and Privacy Policy</a></span>
+                </label>
+
+                <p id="signupError" class="error-msg"></p>
+
+                <button type="submit" class="btn-submit">Create account</button>
+
+                <p class="switch-text">
+                    Already have an account? <a href="login.html">Log in</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

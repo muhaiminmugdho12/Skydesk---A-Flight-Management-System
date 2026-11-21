@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyDesk - Book Flight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-left">
+            <a href="flights.html" class="brand">SkyDesk</a>
+            <nav class="nav-links">
+                <a href="bookings.html">My bookings</a>
+                
+                
+            </nav>
+        </div>
+
+        <div class="nav-actions">
+            
+            <a href="login.html" class="btn-nav-all">Sign out</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Find and book flights</h1>
+        <p class="page-subtitle">Search domestic routes and manage your trip easily.</p>
+
+        <div class="form-card">
+            <form id="flightForm"  action="passenger.html" method="get" onsubmit="return validateFlightForm()">
+                <div class="form-group">
+                    <label for="fromCity">From</label>
+                    <select id="fromCity" name="fromCity" required>
+                        <option value="">Select departure city</option>
+                        <option value="Dhaka">Dhaka</option>
+                        <option value="Cox's Bazar">Cox's Bazar</option>
+                        <option value="Saidpur">Saidpur</option>
+                        <option value="Sylhet">Sylhet</option>
+                        <option value="Rajshahi">Rajshahi</option>
+                        <option value="Jessore">Jessore</option>
+                        <option value="Chittagong">Chittagong</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="toCity">To</label>
+                    <select id="toCity" name="toCity" required>
+                        <option value="">Select destination city</option>
+                        <option value="Dhaka">Dhaka</option>
+                        <option value="Cox's Bazar">Cox's Bazar</option>
+                        <option value="Saidpur">Saidpur</option>
+                        <option value="Sylhet">Sylhet</option>
+                        <option value="Rajshahi">Rajshahi</option>
+                        <option value="Jessore">Jessore</option>
+                        <option value="Chittagong">Chittagong</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="departDate">Depart</label>
+                    <input type="date" id="departDate" name="departDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="returnDate">Return</label>
+                    <input type="date" id="returnDate" name="returnDate" required>
+                </div>
+
+                <p id="flightError" class="error-msg"></p>
+
+                <button type="submit" class="btn-submit">Book flight</button>
+
+               
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
